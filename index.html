@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#00b4d8">
+    <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="description"
+        content="Descubre el mundo con nosotros. Agencia de viajes especializada en experiencias únicas y destinos inolvidables.">
+    <title>Iter Mundus Dream - Tu Próxima Aventura Comienza Aquí</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">
+                        <img src="logo.svg" alt="Iter Mundus Dream" class="logo-light">
+                        <img src="logoblanco.svg" alt="Iter Mundus Dream" class="logo-dark">
+                    </span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinos</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contact" class="nav-link btn-primary-nav">Contacto</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-small">Explora el Mundo</span>
+                    <span class="hero-title-large">Tu Próxima Aventura</span>
+                    <span class="hero-title-large gradient-text">Comienza Aquí</span>
+                </h1>
+                <p class="hero-subtitle">Descubre destinos únicos, experiencias inolvidables y viajes diseñados a tu
+                    medida</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Planea Tu Viaje</a>
+                    <a href="#destinations" class="btn btn-secondary">Ver Destinos</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza hacia abajo</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Destinos Populares</h2>
+                <p class="section-subtitle">Explora los lugares más extraordinarios del mundo</p>
+            </div>
+            <div class="destinations-grid">
+                <!-- Cancun -->
+                <div class="destination-card" data-destination="cancun">
+                    <div class="destination-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1676517308037-e5dd855ba8c6?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Cancún">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">México</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Cancún</h3>
+                        <ul class="destination-details">
+                            <li>5 días</li>
+                            <li>Hotel todo incluido</li>
+                            <li>Vuelo redondo</li>
+                            <li>Traslado redondo aeropuerto-hotel</li>
+                        </ul>
+                        <div class="destination-info">
+                            <span class="price">Desde $13,000 p/p</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Europa Central -->
+                <div class="destination-card" data-destination="europa-central">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?w=800&auto=format&fit=crop"
+                            alt="Europa Central">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">Europa</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Europa Central</h3>
+                        <ul class="destination-details">
+                            <li>12 días</li>
+                            <li>Vuelo redondo</li>
+                            <li>Hotel con desayuno</li>
+                            <li>Traslado redondo aeropuerto-hotel</li>
+                            <li>Guía acompañante</li>
+                            <li>Transporte entre ciudades</li>
+                        </ul>
+                        <div class="destination-info">
+                            <span class="price">Desde $47,000 p/p</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- España - Italia -->
+                <div class="destination-card" data-destination="europa-sur">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&auto=format&fit=crop"
+                            alt="España - Francia - Suiza - Italia">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">Europa</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-name" style="font-size: 1.4rem;">España, Francia, Suiza, Italia</h3>
+                        <ul class="destination-details">
+                            <li>17 días</li>
+                            <li>Vuelo redondo</li>
+                            <li>Guía acompañante</li>
+                            <li>Traslado redondo aeropuerto-hotel</li>
+                            <li>Transporte entre ciudades</li>
+                            <li>Hotel con desayuno</li>
+                            <li>Seguro de viaje</li>
+                        </ul>
+                        <div class="destination-info">
+                            <span class="price">Desde $56,000 p/p</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Japón -->
+                <div class="destination-card" data-destination="japon">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&auto=format&fit=crop"
+                            alt="Japón">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">Asia</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Japón</h3>
+                        <ul class="destination-details">
+                            <li>13 días</li>
+                            <li>Vuelo redondo</li>
+                            <li>Hotel con desayuno</li>
+                            <li>Algunas actividades</li>
+                            <li>Tren bala</li>
+                            <li>Guía solamente en los tours</li>
+                        </ul>
+                        <div class="destination-info">
+                            <span class="price">Desde $56,799</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colombia -->
+                <div class="destination-card" data-destination="colombia">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1568632234165-47bb34c35708?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Colombia">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">Sudamérica</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Colombia</h3>
+                        <ul class="destination-details">
+                            <li>7 días</li>
+                            <li>Vuelo redondo</li>
+                            <li>Vuelos internos</li>
+                            <li>Hotel con desayuno</li>
+                            <li>Transporte entre ciudades</li>
+                            <li>Guía acompañante</li>
+                            <li>Algunas actividades</li>
+                        </ul>
+                        <div class="destination-info">
+                            <span class="price">Desde $20,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Huatulco -->
+                <div class="destination-card" data-destination="huatulco">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?w=800&auto=format&fit=crop"
+                            alt="Huatulco">
+                        <div class="destination-overlay">
+                            <span class="destination-tag">México</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3 class="destination-name">Huatulco</h3>
+                        <ul class="destination-details">
+                            <li>5 días</li>
+                            <li>Hotel todo incluido</li>
+                            <li>Vuelo redondo</li>
+                            <li>Traslado redondo hotel-aeropuerto</li>
+                        </ul>
+                        <div class="destination-info">
+                            <span class="price">Desde $12,000 p/p</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Todo lo que necesitas para tu viaje perfecto</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏨</div>
+                    <h3 class="service-title">Hoteles Premium</h3>
+                    <p class="service-description">Selección exclusiva de alojamientos de lujo y boutique hotels</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3 class="service-title">Vuelos Directos</h3>
+                    <p class="service-description">Las mejores tarifas en vuelos nacionales e internacionales</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3 class="service-title">Tours Personalizados</h3>
+                    <p class="service-description">Experiencias únicas diseñadas según tus intereses</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎫</div>
+                    <h3 class="service-title">Paquetes All-Inclusive</h3>
+                    <p class="service-description">Viaja sin preocupaciones con nuestros paquetes completos</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3 class="service-title">Renta de Autos</h3>
+                    <p class="service-description">Explora a tu ritmo con vehículos de última generación</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3 class="service-title">Seguros de Viaje</h3>
+                    <p class="service-description">Protección completa para viajar con tranquilidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" style="color: #ffffff;">Por Qué Elegirnos</h2>
+                    <p class="about-description">Con más de 10 años de experiencia en el sector turístico, nos
+                        especializamos en crear experiencias de viaje únicas y memorables. Nuestro equipo de expertos
+                        está dedicado a hacer realidad el viaje de tus sueños.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-number">10+</div>
+                            <p class="feature-label">Años de Experiencia</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">1K+</div>
+                            <p class="feature-label">Clientes Satisfechos</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-number">5+</div>
+                            <p class="feature-label">Destinos Disponibles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop"
+                        alt="Viajeros felices">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planea Tu Próximo Viaje</h2>
+                <p class="section-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
+            </div>
+            <div class="contact-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Nombre *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Apellido *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">Destino de Interés</label>
+                            <select id="destination" name="destination">
+                                <option value="">Selecciona un destino</option>
+                                <option value="cancun">Cancún</option>
+                                <option value="europa-central">Europa Central</option>
+                                <option value="europa-sur">España, Francia, Suiza, Italia</option>
+                                <option value="japon">Japón</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="huatulco">Huatulco</option>
+                                <option value="other">Otro destino</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="travelDate">Fecha Estimada de Viaje</label>
+                            <input type="date" id="travelDate" name="travelDate">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="travelers">Número de Viajeros</label>
+                            <input type="number" id="travelers" name="travelers" min="1" value="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Presupuesto Aproximado (USD)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Selecciona un rango</option>
+                                <option value="1000-3000">$1,000 - $3,000</option>
+                                <option value="3000-5000">$3,000 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000+">$10,000+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Cuéntanos sobre tu viaje ideal</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Describe tus preferencias, intereses especiales o cualquier otra información que nos ayude a planear tu viaje perfecto..."></textarea>
+                    </div>
+
+
+
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Solicitud</button>
+
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>jonathanfloresrivero@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>Teléfono</h3>
+                        <p>+52 777 556 4817</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">⏰</div>
+                        <h3>Horario</h3>
+                        <p>Lun - Vie: 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo-wrap">
+                        <img src="logoblanco.svg" alt="Iter Mundus Dream"
+                            style="width: 220px; max-width: 100%; height: auto; display: block;">
+                    </div>
+
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#destinations">Destinos</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Destinos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Cancún</a></li>
+                        <li><a href="#destinations">Europa Central</a></li>
+                        <li><a href="#destinations">España, Francia, Suiza, Italia</a></li>
+                        <li><a href="#destinations">Japón</a></li>
+                        <li><a href="#destinations">Colombia</a></li>
+                        <li><a href="#destinations">Huatulco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Iter Mundus Dream. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/527775564817" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="white">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
